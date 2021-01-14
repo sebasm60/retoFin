@@ -1,0 +1,79 @@
+extends index
+
+block content
+    div(id='contenedor')
+            div(id='direccionalIzquierda' class='container')
+                input(
+                    type='submit'
+                    id='btndireccionalIzquierda'
+                    class='btnDireccional'
+                    value='Encender/Apagar')
+            
+            div(id="tableroCentral" class="container")
+                input(
+                    type='submit'
+                    id='btnEncender'
+                    value='Encender/Apagar')
+            
+                input(
+                    type='submit'
+                    id='btnParadas'
+                    value='Paradas')
+            
+                input(
+                    type='submit'
+                    id='btnArrancar'
+                    value='Arrancar')
+
+                input(
+                    type='submit'
+                    id='btnParquear'
+                    value='Parquear')
+                
+                input(
+                    type='submit'
+                    id='btnEstacionarias'
+                    value='Encender estacionarias')
+            
+                h4 Marchas: 
+                    select(id='marcha')
+                        option(value='neutro') Neutro
+                        option(value='1') Primera
+                        option(value='2') Segunda
+                        option(value='3') Tercera
+                        option(value='4') Cuarta
+                        option(value='5') Quinta
+                        option(value='6') Sexta
+                        option(value='r') Reversa
+                
+                h4 Freno de mano: 
+                    select(id='frenoDeMano')
+                        option(value='on') On
+                        option(value='off') Off
+
+                h4 Freno: 
+                    select(id='freno')
+                        option(value='on') On
+                        option(value='off') Off
+
+                h4 Clutch: 
+                    select(id='clutch')
+                        option(value='on') On
+                        option(value='off') Off
+
+                h4 Distancia: 
+                    input(
+                        type='text'
+                        id='kilometros'
+                        placeholder='Ingrese la distancia'
+                    )
+            
+            div(id='direccionalDerecha', class='container')
+                input(
+                    type='submit'
+                    id='btndireccionalDerecha'
+                    class='btnDireccional'
+                    value='Encender/Apagar')
+
+            div(id='mensajes', class='container')
+                p(id='mensaje')
